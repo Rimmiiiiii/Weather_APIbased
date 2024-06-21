@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    outline: none;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: url('pictures/bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 400px;
+    height: min-content;
+    background-color: white;
+    border-radius: 12px;
+    padding: 28px;
+}
+.search{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search input{
+    width: 75%;
+    background-color: rgb(179, 215, 227);
+    text-transform: capitalize;
+    font-size: 20px;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+}
+.search input::placeholder{
+    color:black;
+}
+.search button{
+    background-color: rgb(179, 215, 227);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+.search button:hover{
+    background-color: rgb(82, 93, 93);
+}
+.weatherbody{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.weatherbody img{
+    width: 60%;
+}
+.weatherbox{
+    margin-block: 20px;
+    text-align: center;
+}
+.weatherbody .temperature{
+    font-size: 45px;
+    font-weight: 800px;
+    position: relative;
+}
+.weatherbody .temperature sup{
+    position: absolute;
+    font-size: 25px;
+    font-weight: 450px;
+}
+.weatherbody .description{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.weatherdetails{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.humidity, .wind{
+    display: flex;
+    align-items: center;
+}
+.weatherdetails i{
+    font-size: 30px;
+}
+.weatherdetails .text{
+    margin-left: 12px;
+}
+.text .span{
+    font-weight: 700px;
+}
+.location_not_found{
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-block-end: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.location_not_found h3{
+    color: rgb(148, 148, 148);
+}
+.location_not_found img{
+    width: 80%;
+}
